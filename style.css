@@ -1,0 +1,824 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    overflow: hidden;
+}
+
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+/* NAVBAR START */
+
+.navbar {
+
+    width: 100%;
+    height: 70px;
+    background: #17191d1a;
+    backdrop-filter: blur(1px);
+}
+
+.navbar .nav__ul {
+    width: 80%;
+    align-items: center;
+}
+
+
+
+.navbar .nav__ul .nav__ul-list .nav__ul-list--link {
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+
+
+
+
+.toggle {
+    cursor: pointer;
+    position: relative;
+    width: 100px;
+    height: 40px;
+    border-radius: 50px;
+    transition: .2s;
+    margin-left: 12rem;
+}
+
+.toggle i {
+    width: 40%;
+    line-height: 40px;
+    text-align: center;
+    font-size: 25px;
+    z-index: 1;
+
+}
+
+.toggle .ball {
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    margin: 3.5px;
+    border-radius: 50%;
+    transition: .3s ease-out;
+}
+
+.navbar input {
+    display: none;
+}
+
+/*
+    -- Light Mode --
+*/
+
+.light {
+    background-image: url(./img/MainPageLight.png);
+    background-size: cover;
+}
+
+.light .toggle {
+    background: linear-gradient(145deg, #e1e1e1, #fff);
+    box-shadow: 3px 3px 4px #e6e6e6,
+        -3px -3px 4px #ffffff;
+}
+
+.light .toggle .bxs-sun {
+    color: #fafafa;
+}
+
+.light .toggle .bx-moon {
+    color: #151d2a;
+}
+
+.light .toggle .ball {
+    background: #151d2a;
+}
+
+/*
+    -- Dark Mode --
+*/
+
+.dark {
+    background-image: url(./img/MainPageDark.png);
+    background-size: cover;
+    color: white;
+}
+
+.dark .toggle {
+    background: #151d2a;
+    box-shadow: 3px 3px 3px #0e131b,
+        -3px -3px 3px #1c2739;
+}
+
+.dark .toggle .bx-sun {
+    color: #fafafa;
+}
+
+.dark .toggle .bxs-moon {
+    color: #151d2a;
+}
+
+.dark .toggle .ball {
+    background: #fafafa;
+    transform: translateX(56px);
+}
+
+.nav {
+    background: rgba(23, 25, 29, 0.7);
+    backdrop-filter: blur(1px);
+}
+
+/* NAVBAR END */
+
+/* MAIN START */
+.main {
+    position: relative;
+    height: 824px;
+}
+
+
+.main .main__btn {
+    width: 60px;
+    height: 60px;
+    background: #6911AD;
+    border-radius: 141px;
+    align-items: end;
+    display: flex;
+    padding: 10px;
+
+}
+
+.main .main__btn:hover {
+    width: 180px;
+    border: 1px dashed #9747FF;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    align-items: center;
+    color: white;
+}
+
+.main .main__btn .main__btn-link {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: end;
+    color: #9747FF;
+    position: relative;
+    left: 25px;
+    text-decoration: none;
+
+}
+
+.main .main__btn .main__btn-link:hover {
+    color: white;
+
+}
+
+.main .globe {
+    background-image: url(./img/Globe.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+    height: 650px;
+    margin-left: 4rem;
+    margin-top: 4rem;
+}
+
+.p {
+    font-family: 'Futura PT';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 50px;
+    line-height: 100%;
+    width: 50%;
+    background: linear-gradient(109.09deg, rgba(0, 40, 248, 0.89) 0%, #6911AD 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* MAIN END  */
+
+/* Advantages START */
+
+.advantages_box {
+    padding: 29px;
+    width: 411px;
+    height: 250px;
+    background: rgba(243, 243, 243, 0.5);
+    border: 1px solid #999999;
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.advantagesBoxDark {
+    padding: 29px;
+    width: 411px;
+    height: 250px;
+    margin: 10px;
+    background: rgba(17, 19, 23, 0.5);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(2.5px);
+    border-radius: 20px;
+}
+
+
+
+.services_fluid {
+    width: 1281px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+}
+
+.servicesFluidDark {
+    background: rgba(14, 16, 20, 0.9);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    color: white;
+    box-shadow: 0 12px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+}
+
+.services_card {
+    width: 30%;
+    height: 300px;
+    margin: 10px;
+    padding: 52px;
+    text-align: center;
+}
+
+/* Advantages END  */
+
+
+/* PROJECTS START */
+
+.projects_nav {
+    list-style: none;
+    margin-top: 20px;
+    width: 800px;
+    height: 55px;
+    background: rgba(255, 255, 255, 0.5);
+    border: 1px solid #999999;
+    backdrop-filter: blur(2px);
+    border-radius: 90px;
+}
+
+.projects_nav :hover {
+    cursor: pointer;
+}
+
+.projects_nav :hover ::after {
+    opacity: 1;
+
+}
+
+.projects_nav_filter {
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-bottom: 5px;
+    transition: all 0.5s;
+    position: relative;
+
+}
+
+.active {
+    color: white;
+}
+
+.mobile.active {
+    width: 107px;
+    left: 41px;
+}
+
+
+
+
+.projects_nav_filter:after {
+    z-index: -99;
+    content: "";
+    display: block;
+    width: 160px;
+    height: 52px;
+    background-color: purple;
+    opacity: 0;
+    transition: all 0.3s ease 0s;
+    position: absolute;
+    bottom: -11px;
+    left: -47px;
+    border-radius: 90px;
+    color: white;
+}
+
+.projects_nav_filter.active:after {
+    opacity: 1;
+
+}
+
+
+.projects-wrapper {
+    margin-top: 50px;
+
+}
+
+.projects-wrapper .user {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+    width: 30%;
+}
+
+.projects-wrapper .hide {
+    opacity: 0;
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    position: absolute;
+}
+
+.projects-wrapper .projects_img {
+    width: 100%;
+}
+
+
+.projects__btn {
+    width: 60px;
+    height: 60px;
+    background: #6911AD;
+    border-radius: 141px;
+    align-items: end;
+    display: flex;
+    padding: 10px;
+    position: relative;
+    top: 50px;
+}
+
+.projects__btn:hover {
+    width: 180px;
+    border: 1px dashed #9747FF;
+    border-radius: 5px;
+    transition: .3s ease-in-out;
+    align-items: center;
+    color: white;
+}
+
+.projects__btn .projects__btn-link {
+    font-family: 'Proxima Nova';
+    font-size: 18px;
+    line-height: 22px;
+    text-align: end;
+    color: #9747FF;
+    position: relative;
+    left: 25px;
+    text-decoration: none;
+
+}
+
+.projects__btn .projects__btn-link:hover {
+    color: white;
+
+}
+
+/* PROJECTS END  */
+
+
+/* BLOG START */
+
+
+.blog {
+    position: relative;
+    height: auto;
+}
+
+.blog .container .swiper-container .swiper-wrapper .swiper-slide .card-image {
+    border: none;
+    outline: none;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.24);
+    border-radius: 18px;
+
+
+}
+
+.blog .container .swiper-container .swiper-wrapper .swiper-slide .cardImageDark {
+    background: rgba(14, 16, 20, 0.9);
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+}
+
+.blog .container .swiper-container .swiper-wrapper .swiper-slide .swiper_about {
+    width: 290px;
+    height: 76px;
+    margin-bottom: 0;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.blog .container .swiper-container .swiper-wrapper .swiper-slide .swiper_title {
+    width: 290px;
+    height: 48px;
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+}
+
+.blog .container .swiper-container .swiper-wrapper .swiper-slide .card-image img {
+    display: block;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.blog .container .swiper-container .swiper-pagination-bullet {
+    opacity: 0.8;
+    background: #252a32;
+}
+
+.blog .container .swiper-container .swiper-pagination-bullet-active {
+    background: #ffffff;
+}
+
+.blog .container .swiper-container .swiper-button-next,
+.blog .container .swiper-container .swiper-button-prev {
+    background-image: none;
+    background-size: 0;
+    background-repeat: no-repeat;
+    background-position: 0;
+    margin-top: 3rem;
+    left: auto;
+}
+
+.blog .container .swiper-container .swiper-button-next .arrow-icon,
+.blog .container .swiper-container .swiper-button-prev .arrow-icon {
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+.blog .container .swiper-container .swiper-button-next {
+    position: relative;
+    right: -97%;
+    top: -18rem;
+}
+
+/* BLOG END */
+
+/* OUR TEAM START */
+
+.our_team_title {
+    width: 100%;
+    height: 88px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+
+    border-radius: 20px;
+}
+
+.ourTeamTitleDark {
+    width: 100%;
+    height: 88px;
+    backdrop-filter: blur(1px);
+    border-radius: 20px;
+    background: rgba(14, 16, 20, 0.9);
+    border: 1px solid #4E4E4E;
+}
+
+.our_team_img {
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+    border-radius: 95px;
+}
+
+.our_team .swiper-wrapper {
+    width: 75%;
+}
+
+/* OUR TEAM END */
+
+
+
+/* CALL ACTION START */
+
+.call-action .call-action_box {
+    height: 873px;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+}
+
+.call-action input {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+
+}
+
+.call-action label {
+    display: flex;
+    align-items: center;
+    margin: 15px 0;
+}
+
+
+.call-action .checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #999999;
+}
+
+.call-action span {
+    font-weight: bold;
+    margin-left: 10px;
+
+}
+
+.callActionBoxDark {
+    height: 873px;
+    background: #0E1014;
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px;
+}
+
+.call_action_right {
+    width: 487px;
+    height: 602px;
+    background: rgba(83, 83, 83, 0.1);
+    box-shadow: 20px 20px 40px rgba(241, 216, 253, 0.08);
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+}
+
+.call_action_right-logo {
+    width: 180px;
+}
+
+/* CALL ACTION END */
+
+
+/* FOOTER START */
+
+.footer {
+    background: white;
+    border-top: 1px solid #FFFFFF;
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px 20px 0px 0px;
+}
+
+.footerDark {
+    background: rgba(14, 16, 20, 0.9);
+    border-top: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+    border-radius: 20px 20px 0px 0px;
+    color: white;
+}
+
+.footer__title {
+    font-family: 'Proxima Nova';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    letter-spacing: 0.06em;
+
+}
+
+/* FOOTER END */
+
+/* NEWS START */
+
+.news_about .news_about_left {
+    border: 1px solid #4E4E4E;
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+}
+
+.news_about .news_about_card_right {
+    width: 317px;
+    height: 283px;
+
+    border: 1px solid #999999;
+    backdrop-filter: blur(1px);
+    /* Note: backdrop-filter has minimal browser support */
+
+    border-radius: 20px;
+}
+
+@media only screen and (max-width:576px) {
+
+    /* NAVBAR START */
+    .navbar .nav__ul {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .nav__ul {
+        position: absolute;
+        width: 100%;
+        top: 53px;
+        left: 0px;
+        background: linear-gradient(0deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(./img/Noise.png);
+        list-style-type: none;
+        transform: translateX(-150%);
+        transition: 0.2s ease all;
+    }
+
+    .toggle {
+        margin-left: 0;
+    }
+
+    .show {
+        transform: translateY(4%);
+    }
+
+    /* NAVBAR END */
+
+
+    /* MAIN START  */
+
+    .menu {
+        font-size: 35px;
+    }
+
+    .main {
+        position: relative;
+        height: auto;
+        display: contents;
+    }
+
+    .main .globe {
+        margin-left: 0;
+        background-position: center;
+        height: 350px;
+        margin-top: 0rem;
+        z-index: -9;
+
+    }
+
+
+
+    .main .main__btn {
+        position: relative;
+        left: 24%;
+        top: 28px;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+    }
+
+    .main .container .swiper-container .swiper-button-next {
+        position: relative;
+        right: -88%;
+        top: -17rem;
+    }
+
+    /* MAIN END  */
+
+
+    /* ADVANTAGES START  */
+
+    .advantages .advantages_left .advantages_box {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        margin-top: 13px;
+
+    }
+    .advantagesBoxDark {
+        width: 100%;
+        margin: 0;
+        margin-top: 2rem;
+    }
+    /* ADVANTAGES END  */
+
+
+    /* SERVICES START  */
+
+    .services_fluid {
+        width: 100%;
+
+    }
+
+    .services_card {
+        width: 100%;
+        margin: 0px;
+        padding: 52px;
+    }
+
+    .swiper-slide {
+        padding: 10px;
+
+    }
+
+    .swiper-button-next {
+        right: 20px;
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+    }
+
+    /* SERVICES END  */
+
+    .blog .container .swiper-container .swiper-button-next,
+    .blog .container .swiper-container .swiper-button-prev {
+        margin-top: 1rem;
+    }
+    
+    
+    .blog .container .swiper-container .swiper-button-next {
+        position: relative;
+        right: -93%;
+    }
+
+    .our_team .swiper-wrapper {
+        width: 100%;
+    }
+
+    /* PROJECTS START  */
+
+    .projects_nav {
+        width: auto;
+        height: auto;
+        border-radius: 0px;
+    }
+
+    .projects_nav_hide {
+        position: relative;
+        z-index: -999;
+    }
+
+    .projects_nav_filter:after {
+        height: 32px;
+        bottom: 0px;
+        left: 84px;
+        border-radius: 0px;
+
+    }
+
+    .projects-wrapper .user {
+        width: 100%;
+    }
+
+    .mobile.active {
+        width: 330px;
+        left: 0px;
+    }
+
+    /* PROJECTS END */
+
+
+    /* CALL ACTION START  */
+
+    .call-action .call-action_box {
+        height: auto;
+    }
+
+    .callActionBoxDark {
+        height: auto;
+
+    }
+
+    .call_action_right {
+        width: auto;
+        height: auto;
+
+    }
+
+    /* CALL ACTION END */
+
+
+    .footer__title {
+        font-family: 'Banana Brick';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 54px;
+        line-height: 66px;
+        letter-spacing: 0.06em;
+
+    }
+}
